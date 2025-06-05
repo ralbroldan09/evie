@@ -1,0 +1,16 @@
+{
+    "project": "Evie",
+    "description": "Specialized mobile app for hands-free, voice-activated text messaging",
+    "tech_stack": ["React Native", "TypeScript", "Porcupine/Pico", "Android_first", "iOS_secondary"],
+    "development_focus": "Accessibility-first voice messaging tool",
+    "accessibility": "primary_requirement",
+    "target_platform": "Android_full_background_iOS_siri_activated",
+    "ai_context": {
+      "code_style": "TypeScript strict mode",
+      "component_type": "functional_with_hooks",
+      "error_handling": "comprehensive",
+      "accessibility_compliance": "WCAG_2.1_AA",
+      "offline_capability": "required",
+      "privacy_focus": "on_device_processing"
+    }
+  }
