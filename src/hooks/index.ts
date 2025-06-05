@@ -1,0 +1,9 @@
+export { default as useVoiceRecognition } from './useVoiceRecognition';
+export { default as useWakeWord } from './useWakeWord';
+export { default as useSpeechSynthesis } from './useSpeechSynthesis';
+export { default as useAccessibility } from './useAccessibility';
+export { default as useMessages } from './useMessages';
+export { default as useContacts } from './useContacts';
+export { default as usePermissions } from './usePermissions';
+export { default as useTheme } from './useTheme';
+export { default as useSettings } from './useSettings';

@@ -1,3 +1,101 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    // Strict Type Checking for Error Prevention
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Additional Checks for Code Quality
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    // Module Resolution & Path Aliases
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@screens/*": ["src/screens/*"],
+      "@navigation/*": ["src/navigation/*"],
+      "@services/*": ["src/services/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@utils/*": ["src/utils/*"],
+      "@types/*": ["src/types/*"],
+      "@constants/*": ["src/constants/*"],
+      "@accessibility/*": ["src/accessibility/*"],
+      "@voice/*": ["src/voice/*"],
+      "@storage/*": ["src/storage/*"],
+      "@assets/*": ["src/assets/*"]
+    },
+
+    // React Native & JSX Configuration
+    "jsx": "react-native",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    // Code Generation & Output
+    "target": "esnext",
+    "lib": ["esnext"],
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+
+    // Accessibility & Voice-specific Type Safety
+    "types": [
+      "jest",
+      "react-native",
+      "react"
+    ],
+
+    // Development Experience
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "pretty": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "src/**/*",
+    "index.js",
+    "App.tsx",
+    "__tests__/**/*",
+    "e2e/**/*",
+    "global.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js",
+    "android",
+    "ios",
+    ".expo",
+    ".expo-shared",
+    "web-build",
+    "dist",
+    "build",
+    "coverage"
+  ],
+  "ts-node": {
+    "esm": true
+  }
 }
