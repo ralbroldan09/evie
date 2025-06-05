@@ -20,7 +20,7 @@
     "noPropertyAccessFromIndexSignature": true,
 
     // Module Resolution & Path Aliases
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
